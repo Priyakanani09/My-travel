@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Travels.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#">
+                <img src="img/header1-logo.svg" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav  fw-bold gap-1 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Travel-About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destination">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tour">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Travel-Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Travel-Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Travel-Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider-image-one-1.png" class="d-block w-100 blur-bg slider-img" alt="...">
+                <div class="carousel-caption d-flex flex-column  justify-content-center align-items-center">
+                    <h5 class="hi5">Come to experience in Turio</h5>
+                    <h2 class="hi2 animate__animated animate__backInUp">
+                        GRAND CANYON <br>
+                        <span> GO EXPLORE</span>
+                    </h2>
+                    <p>Sed convallis sit amet leo quis feugiat. Nunc interdum mollis facilisis.
+                        feugi Donec id the urna aliquet, suscipit turpis ut Donec id urna aliquet,
+                        suscipit turpis ut, facilisis purus.Sed convallis sit amet leo quis .</p>
+                    <button type="button" class="btn btn-success">Explore Now</button><br>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider-image-two-1.png" class="d-block w-100 blur-bg slider-img" alt="...">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="hi5">Come to experience in Turio</h5>
+                    <h2 class="hi2 animate__animated animate__backInUp">
+                        LANDMARK TOUR <br>
+                        <span> LET'S ENJOY</span>
+                    </h2>
+                    <p>Sed convallis sit amet leo quis feugiat. Nunc interdum mollis facilisis.
+                        feugi Donec id the urna aliquet, suscipit turpis ut Donec id urna aliquet,
+                        suscipit turpis ut, facilisis purus.Sed convallis sit amet leo quis .</p>
+                    <button type="button" class="btn btn-success">Explore Now</button><br>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider-image-three-1.png" class="d-block w-100 blur-bg slider-img" alt="...">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="hi5">Come to experience in Turio</h5>
+                    <h2 class="hi2 animate__animated animate__backInUp">
+                        KEEP TRAVEL ON <br>
+                        <span> CALM & TRAVEL</span>
+                    </h2>
+                    <p>Sed convallis sit amet leo quis feugiat. Nunc interdum mollis facilisis.
+                        feugi Donec id the urna aliquet, suscipit turpis ut Donec id urna aliquet,
+                        suscipit turpis ut, facilisis purus.Sed convallis sit amet leo quis .</p>
+                    <button type="button" class="btn btn-success">Explore Now</button><br>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5" id="tour">
+            <div class="col text-center">
+                <h5 style="color: #54a15d; font-family: initial;">Perfect for You</h5>
+                <h1 style="color: #2d373c; font-weight: 800;">Popular Tour Package</h1>
+                <p style="color: #6c757d;">
+                    Discover our best-selling travel packages loved by thousands of explorers. <br>
+                    Handpicked tours that offer unforgettable experiences at top destinations.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-3">
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/Destination1.png" class="card-img-top" alt="...">
+                        <button class="btn btn-success position-absolute start-0 m-2">
+                            <i class="fa-regular fa-clock"></i> 3 days 4 nights
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Vinales Valley</h4>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Cuba</p>
+                        <a href="Travel-form.html" class="btn fw-bold btn-outline-success">
+                            BOOK NOW&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/Destination2.png" alt="...">
+                        <button class="btn btn-success position-absolute start-0 m-2">
+                            <i class="fa-regular fa-clock"></i> 3 days 4 nights
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">National Capitol of Cuba</h4>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Cuba</p>
+                        <a href="Travel-form.html" class="btn fw-bold btn-outline-success">
+                            BOOK NOW&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/Destination3.png" class="card-img-top" alt="...">
+                        <button class="btn btn-success position-absolute  start-0 m-2">
+                            <i class="fa-regular fa-clock"></i> 3 days 4 nights
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Franz Josef Glacier</h4>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> New Zealand</p>
+                        <a href="Travel-form.html" class="btn fw-bold btn-outline-success">
+                            BOOK NOW&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/Destination4.png" class="card-img-top" alt="...">
+                        <button class="btn btn-success position-absolute  start-0 m-2">
+                            <i class="fa-regular fa-clock"></i> 3 days 4 nights
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Milford Sound Piopiotahi</h4>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> New Zealand</p>
+                        <a href="Travel-form.html" class="btn fw-bold btn-outline-success">
+                            BOOK NOW&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/Destination5.png" class="card-img-top" alt="...">
+                        <button class="btn btn-success position-absolute  start-0 m-2">
+                            <i class="fa-regular fa-clock"></i> 3 days 4 nights
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Cathedrale de paris</h4>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Paris</p>
+                        <a href="Travel-form.html" class="btn fw-bold btn-outline-success">
+                            BOOK NOW&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/Destination6.png" class="card-img-top" alt="...">
+                        <button class="btn btn-success position-absolute  start-0 m-2">
+                            <i class="fa-regular fa-clock"></i> 3 days 4 nights
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Louvre Museum</h4>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Belgium, Paris</p>
+                        <a href="Travel-form.html" class="btn fw-bold btn-outline-success">
+                            BOOK NOW&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5" id="destination">
+            <div class="col text-center">
+                <h5 style="color: #54a15d; font-family: initial;">Get Ready To</h5>
+                <h1 style="color: #2d373c; font-weight: 800;">Explore Top Destination</h1>
+                <p style="color: #6c757d;">
+                    Discover the world’s most breathtaking places with our expertly crafted tours. <br>
+                    From iconic landmarks to hidden gems — your next adventure starts here.
+                </p>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="image-text">
+                    <img src="img/travel1.png" class="fixed-height" alt="..." style="border-radius: 5px;">
+                    <h1 class="text">United States of America</h1>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="image-text">
+                    <img src="img/travel2.png" class=" fixed-height" alt="..." style="border-radius: 5px;">
+                    <h4 class="text">Paris</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="image-text">
+                    <img src="img/travel3.png" class="fixed-height" alt="..." style="border-radius: 5px;">
+                    <h4 class="text">New Zeland</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="image-text">
+                    <img src="img/travel4.png" class="fixed-height" alt="..." style="border-radius: 5px;">
+                    <h1 class="text">India</h1>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="image-text">
+                    <img src="img/travel5.png" class=" fixed-height" alt="..." style="border-radius: 5px;">
+                    <h4 class="text">Grand Canyon</h4>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="image-text">
+                    <img src="img/travel6.png" class="fixed-height" alt="..." style="border-radius: 5px;">
+                    <h4 class="text">England</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card my-5 text-white text-center">
+        <img src="img/bg.png" class="card-img" alt=".." >
+        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+            <h1 class="card-title hi2">
+                Get 20% OFF Your <br>First <span style="color: #54a15d;">TRIP!</span>
+            </h1>
+            <p class="card-text">
+                Don’t Wanna Miss Somethings? Subscribe Right Now & Get The <br>Special Discount & Monthly Newsletter.
+            </p>
+            <form class="row g-2 w-100" style="max-width: 600px;" action="" method="post">
+                <div class="col-md-8 col-sm-6 bun">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-md-4 col-sm-6 bun">
+                    <button type="submit" class="btn btn-success w-100">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row my-5 text-center">
+            <div class="col">
+                <h5 style="color: #54a15d; font-family: initial;">Best Plan</h5>
+                <h1 style="color: #2d373c; font-weight: 800;">Choose Holiday Offer</h1>
+                <p style="color: #6c757d;">Pick your perfect getaway and make memories that last a lifetime.</p>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="image-container" style="height: 400px; ">
+                    <img src="img/Destination1.png" class="card-img-top" alt="...">
+                    <button class="btn btn-success position-absolute fw-bold  start-0 m-2"
+                        style="border-radius: 0; left: 10px !important;">
+                        $59
+                    </button>
+                    <h4 class="text">Vinales Valley
+                        <p><small class="fs-5"><i class="fa-regular fa-calendar"></i> 3 days 4 nights</small></p>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="image-container" style="height: 400px; ">
+                    <img src="img/Destination2.png" class="card-img-top" alt="...">
+                    <button class="btn btn-success position-absolute  fw-bold start-0 m-2"
+                        style="border-radius: 0; left: 10px !important;">
+                        $120 <small><del>$150</del></small>
+                    </button>
+                    <h4 class="text">National Capitol of Cuba
+                        <p><small class="fs-5"><i class="fa-regular fa-calendar"></i> 3 days 4 nights</small></p>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="image-container" style="height: 400px; ">
+                    <img src="img/Destination3.png" class="card-img-top " alt="...">
+                    <button class="btn btn-success position-absolute fw-bold  start-0 m-2"
+                        style="border-radius: 0; left: 10px !important;">
+                        $39 <small><del>$45</del></small>
+                    </button>
+                    <h4 class="text">Franz Josef Glacier
+                        <p><small class="fs-5"><i class="fa-regular fa-calendar"></i> 3 days 4 nights</small></p>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="image-container" style="height: 400px; ">
+                    <img src="img/Destination4.png" class="card-img-top" alt="...">
+                    <button class="btn btn-success position-absolute fw-bold  start-0 m-2"
+                        style="border-radius: 0; left: 10px !important;">
+                        $138 <small><del>$165</del></small>
+                    </button>
+                    <h4 class="text">Milford Sound Piopiotahi
+                        <p><small class="fs-5"><i class="fa-regular fa-calendar"></i> 3 days 4 nights</small></p>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="image-container" style="height: 400px; ">
+                    <img src="img/Destination5.png" class="card-img-top" alt="...">
+                    <button class="btn btn-success position-absolute  fw-bold start-0 m-2"
+                        style="border-radius: 0; left: 10px !important;">
+                        $79
+                    </button>
+                    <h4 class="text">Cathedrale de paris
+                        <p><small class="fs-5"><i class="fa-regular fa-calendar"></i> 3 days 4 nights</small></p>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="image-container" style="height: 400px; ">
+                    <img src="img/Destination6.png" class="card-img-top " alt="...">
+                    <button class="btn btn-success position-absolute fw-bold  start-0 m-2"
+                        style="border-radius: 0; left: 10px !important;">
+                        $83
+                    </button>
+                    <h4 class="text">Louvre Museum
+                        <p><small class="fs-5"><i class="fa-regular fa-calendar"></i> 3 days 4 nights</small></p>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5 text-center" id="guide">
+            <div class="col">
+                <h5 style="color: #54a15d; font-family: initial;">Read The Top</h5>
+                <h1 style="color: #2d373c; font-weight: 800;">Tour Guide</h1>
+                <p style="color: #6c757d;">
+                    Explore handpicked travel experiences led by expert guides.<br> Discover culture, history, and
+                    adventure in every journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/tour-guide-one.png" class="card-img-top" alt="Guide 1">
+                    <div class="card-body">
+                        <h5 class="card-title">John Smith</h5>
+                        <p class="card-text">Expert in European Tours</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/tour-guide-two.png" class="card-img-top" alt="Guide 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Yash Khan</h5>
+                        <p class="card-text">Adventure & Trekking Guide</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/tour-guide-three.jpg" class="card-img-top" alt="Guide 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Carlos Rivera</h5>
+                        <p class="card-text">Cultural & Heritage Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-3 mb-4 ">
+                    <img src="img/logo2-1.svg" /><br><br>
+                    <p>Your trusted partner in discovering new destinations around the world. </p>
+                    <p class="color"><strong>Working Hours:</strong> Mon - Sat: 9:00 AM - 7:00 PM</p>
+                    <h3 class="fw-bold">Follow Us On :</h3>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3 fs-5"><i class="fab fa-facebook-f bg-color-icon"></i></a>
+                        <a href="#" class="text-white me-3 fs-5"><i class="fab fa-twitter bg-color-icon1"></i></a>
+                        <a href="#" class="text-white me-3 fs-5"><i class="fab fa-instagram bg-color-icon1"></i></a>
+                        <a href="#" class="text-white me-3 fs-5"><i class="fab fa-linkedin-in bg-color-icon1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h3 class="ms-4 mb-3">Quick Links</h3>
+                    <ul class="list-unstyled ms-4">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="Travel-Contact.html" class="text-white text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="#guide" class="text-white text-decoration-none">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h3 class="ms-4 mb-3">Tour Types</h3>
+                    <ul class="list-unstyled ms-4">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Adventure</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Cultural</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Relaxation</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Family</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Wildlife</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h3 class="mb-4">Contact Us</h3>
+                    <p><i class="fas fa-envelope me-2"></i> info@travelco.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +91 9876543210</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Main Street, New Delhi, India</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2025 Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
