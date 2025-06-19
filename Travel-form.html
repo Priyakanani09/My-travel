@@ -35,7 +35,13 @@
     .btn-success {
       font-weight: bold;
       letter-spacing: 1px;
-      width: 32%;
+      width: 70%;
+    }
+    @media  (min-width: 310px) and (max-width: 575px) {
+      .btn{
+        width: 75%;
+        margin: 5px;
+      }
     }
   </style>
 </head>
@@ -84,9 +90,17 @@
           <label>Special Requests</label>
           <textarea class="form-control" rows="3" placeholder="Allergies, transport needs, etc."></textarea>
         </div>
-
-        <button type="submit" class="btn btn-success">Submit Booking</button>
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <button type="submit" class="btn btn-success">Submit Booking</button>
+       
+        </div>
+        <div class="col-md-6 col-sm-6">
+            
         <a href="index.html" class="btn btn-success">Go to Home Page</a>
+        </div>
+        </div>
+        
       </form>
     </div>
   </div>
